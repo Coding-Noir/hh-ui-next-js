@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Bergen Text";
+  src: url("../public/fonts/BergenText-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Bergen Text";
+  src: url("../public/fonts/BergenText-Semibold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Bergen Text";
+  src: url("../public/fonts/BergenText-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@layer base {
+  body {
+    @apply h-screen flex flex-col font-body bg-body;
+  }
+
+  main {
+    @apply flex-1;
+  }
+
+  a {
+    @apply inline-block;
+  }
+}
+
+@layer components {
+}
+
+@layer utilities {
+  .text-shadow {
+    text-shadow: -5px 5px 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000,
+      1px 0 0 #000;
+  }
+}
