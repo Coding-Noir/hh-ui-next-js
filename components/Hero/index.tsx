@@ -6,7 +6,12 @@ import SectionTag from "../SectionTag"
 
 const Hero = ({ className }: { className?: string }) => {
   return (
-    <section className={cn(className)}>
+    <section
+      className={cn(className)}
+      id="hero"
+      data-bgcolor="#000000"
+      data-textcolor="#ffffff"
+    >
       <Container variant="md" className="flex items-center">
         <div className="max-w-[800px]">
           <SectionTag text="Text" />
@@ -35,6 +40,7 @@ const Hero = ({ className }: { className?: string }) => {
               width={650}
               className="w-full border-4 border-black rounded-tl-[120px]"
               alt=""
+              priority
             />
           </div>
         </div>

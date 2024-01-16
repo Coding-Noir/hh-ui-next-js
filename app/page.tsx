@@ -1,3 +1,4 @@
+import ColorBGWrapper from "@/components/ColorBGWrapper"
 import Customize from "@/components/Customize"
 import Hero from "@/components/Hero"
 import Magazines from "@/components/Magazines"
@@ -10,6 +11,7 @@ export default function Home() {
       <Hero />
       <Marquee text="Lorem Ipsom Text Here" />
       <Subscribe />
+
       <Customize />
       <Magazines />
     </>

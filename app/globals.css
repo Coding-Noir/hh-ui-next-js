@@ -23,7 +23,7 @@
 
 @layer base {
   body {
-    @apply h-screen flex flex-col font-body bg-body;
+    @apply h-screen flex flex-col font-body bg-body transition-all duration-300 ease-in-out;
   }
 
   main {

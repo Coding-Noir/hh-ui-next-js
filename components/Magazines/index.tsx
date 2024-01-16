@@ -7,7 +7,7 @@ type Props = {}
 
 const Magazines = (props: Props) => {
   return (
-    <section>
+    <section id="magazines">
       <Container variant="sm" className="max-w-[690px]">
         <div className="text-center flex flex-col items-center gap-9">
           <SectionTag text="Text" />

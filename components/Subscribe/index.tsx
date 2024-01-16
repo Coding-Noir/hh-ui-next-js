@@ -1,12 +1,29 @@
+"use client"
 import Image from "next/image"
 import Container from "../Container"
 import Button from "../Button"
+import { useEffect, useRef } from "react"
+import { useInView } from "framer-motion"
 
 type Props = {}
 
 const Subscribe = (props: Props) => {
+  const ref = useRef(null)
+  const isInView = useInView(ref)
+
+  useEffect(() => {
+    const body = document.querySelector("body")
+
+    if (isInView) {
+      body?.classList.add("bg-black")
+    } else {
+      body?.classList.remove("bg-black")
+    }
+    console.log("Subscribe is in view: ", isInView)
+  }, [isInView])
+
   return (
-    <section>
+    <section id="subscribe" ref={ref}>
       <Container variant="sm" className="flex items-center gap-14">
         <div className="shrink-0">
           <Image
