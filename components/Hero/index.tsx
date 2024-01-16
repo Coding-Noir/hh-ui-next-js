@@ -2,15 +2,14 @@ import Image from "next/image"
 import Button from "../Button"
 import Container from "../Container"
 import { cn } from "@/libs/utils"
+import SectionTag from "../SectionTag"
 
 const Hero = ({ className }: { className?: string }) => {
   return (
     <section className={cn(className)}>
       <Container variant="md" className="flex items-center">
         <div className="max-w-[800px]">
-          <div className="py-1 px-5 bg-black inline-block text-white uppercase text-base font-semibold mb-4">
-            <p>Text</p>
-          </div>
+          <SectionTag text="Text" />
 
           <h1 className="text-balance text-8xl text-white leading-[1] text-shadow font-bold mb-6">
             Section Title
