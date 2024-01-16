@@ -1,12 +1,11 @@
 import Image from "next/image"
 import Button from "../Button"
 import Container from "../Container"
+import { cn } from "@/libs/utils"
 
-type Props = {}
-
-const Hero = (props: Props) => {
+const Hero = ({ className }: { className?: string }) => {
   return (
-    <section className="py-[100px]">
+    <section className={cn(className)}>
       <Container variant="md" className="flex items-center">
         <div className="max-w-[800px]">
           <div className="py-1 px-5 bg-black inline-block text-white uppercase text-base font-semibold mb-4">
@@ -18,8 +17,9 @@ const Hero = (props: Props) => {
           </h1>
 
           <p className="text-2xl">
-            Inspire curious young minds with magazines + books for learning and
-            creativity. Join the adventure for a lifetime of Big Brain Benefits.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum
+            molestias blanditiis placeat magnam sequi eligendi libero explicabo
+            earum molestiae nulla.
           </p>
 
           <div className="flex items-center gap-5 mt-12">

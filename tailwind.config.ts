@@ -14,6 +14,13 @@ const config: Config = {
       colors: {
         body: "#efefef",
         primary: "#ff6943",
+        yellow: "#ffd961",
+      },
+      keyframes: {
+        slide: {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(-100%)" },
+        },
       },
     },
   },
